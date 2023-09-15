@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@astrojs/netlify": "^3.0.1",
+    "@astrojs/tailwind": "^5.0.0",
+    "tailwindcss": "^3.3.3"
+  },
+  "name": "castadev.me",
+  "description": "This project showcases my personal portfolio, a window into my journey in the world of development. Here you'll find a collection of projects that reflect my passion and skills in the technology field. Explore, discover, and connect! ✨",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "keywords": [
+    "astro"
+  ],
+  "author": "@victorcasta",
+  "license": "MIT"
+}
