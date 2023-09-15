@@ -1,14 +1,15 @@
 ---
-
+import { Image } from 'astro:assets'
+import avatar from "../assets/img/avatar.png"
 ---
 
-<div class="About w-full h-full bg-gray-950">
+<div class="About w-full h-full grid grid-cols-2 items-center">
     <div>
         <h1 class="text-white">Victor Arroyave Castañeda</h1>
         <h2>Front end developer JR</h2>
     </div>
-    <div>
-        <img src="https://avatars.githubusercontent.com/u/115094771" alt="avatar">
+    <div class="w-full h-full flex items-end">
+        <Image class={""} src={avatar} alt="avatar image"/>
     </div>
 </div>
 
