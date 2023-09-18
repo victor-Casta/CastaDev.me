@@ -15,13 +15,13 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
 <style is:global>
-	@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700;800&display=swap');
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
@@ -34,12 +34,7 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: 'Manrope', sans-serif;
 		background: #13151a;
 		background-size: 224px;
-	}
-	code {
-		font-family:
-		'Manrope', sans-serif;
 	}
 </style>

@@ -3,13 +3,13 @@ import { Image } from 'astro:assets'
 import avatar from "../assets/img/avatar.png"
 ---
 
-<div class="About w-full h-full grid grid-cols-2 items-center">
-    <div>
-        <h1 class="text-white">Victor Arroyave Castañeda</h1>
-        <h2>Front end developer JR</h2>
+<div class="About grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center">
+    <div class="w-full h-full px-5 flex flex-col justify-center">
+        <h1 class="text-white font-montserrat text-3xl font-semibold">Victor Arroyave Castañeda</h1>
+        <h2 class="text-white">Front end developer JR</h2>
     </div>
-    <div class="w-full h-full flex items-end">
-        <Image class={""} src={avatar} alt="avatar image"/>
+    <div class="w-full h-full flex items-end justify-end">
+        <Image class={"w-80 h-80"} src={avatar} alt="avatar image"/>
     </div>
 </div>
 
