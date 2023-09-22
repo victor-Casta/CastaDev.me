@@ -1,17 +1,57 @@
 ---
 import { Image } from 'astro:assets'
+import pinterest from '../assets/img/pinterest.png'
+import instagram from '../assets/img/instagram.png'
+import linkedin from '../assets/img/linkedin.png'
+import x from '../assets/img/x.png'
+import melborp from '../assets/img/melborp.gif'
 ---
 
-<div class="Experience grid gap-4 grid-cols-2 auto-cols-max">
-    <div class="social-media">
-        <div>instagram</div>
-        <div>Pinterest</div>
-        <div>Linkedin</div>
-        <div>x</div>
+<div class="Experience">
+    <div class="Experience-social">
+        <div class="social-pinterest">
+            <Image src={pinterest} alt="pinterest" />
+        </div>
+        <div class="social-instagram">
+            <Image src={instagram} alt="Instagram" />
+        </div>
+        <div class="social-linkedin">
+            <Image src={linkedin} alt="Linkedin" />
+        </div>
+        <div class="social-x">
+            <Image src={x} alt="x" />
+        </div>
     </div>
     <div class="work">
-        <img src="" alt="">
+        <Image src={melborp} alt="melborp" />
         <h2>Melborp.art</h2>
         <p>IT Technician and Front-end JR developer</p>
     </div>
 </div>
+
+<style>
+    .Experience {
+        @apply w-full grid md:grid-cols-12 md:place-items-start;
+        .Experience-social {
+            @apply w-full max-w-sm grid grid-cols-2 col-span-4;
+            div {
+                @apply w-40 h-40 flex justify-center items-center rounded-xl;
+            }
+            .social-instagram {
+                @apply bg-fuchsia-900 mr-2 mb-2;
+            }
+            .social-linkedin {
+                @apply bg-blue-200 mr-2;
+            }
+            .social-pinterest {
+                @apply bg-red-300 mr-2 mb-2;
+            }
+            .social-x {
+                @apply bg-black mr-2;
+            }
+        }
+        .work {
+            @apply w-full h-full bg-white col-span-8 rounded-xl flex place-items-center;
+        }
+    }
+</style>
