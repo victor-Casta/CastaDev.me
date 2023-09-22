@@ -1,18 +1,51 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import About from '../components/About.astro';
+import Layout from "../layouts/Layout.astro";
+import About from "../components/About.astro";
+import Experience from "../components/Experience.astro";
 ---
 
 <Layout title="castadev">
-	<main class="w-full flex justify-center items-center">
-		<div class="content-layout h-full w-11/12 lg:w-5/12  bg-gray-500">
-			<div class="section-about w-full mt-6 h-fit bg-black rounded-lg">
-				<About />
-			</div>
-			<div class="social-work w-full h-96 bg-green-400 my-3 rounded-lg"></div>
-			<div class="study w-full h-96 bg-red-500 my-3 rounded-3xl"></div>
-			<div class="projects w-full h-96 bg-blue-600 my-3 rounded-3xl"></div>
-			<div class="contact w-full h-96 bg-blue-700 rounded-3xl"></div>
-		</div>
-	</main>
+  <main class="main-content">
+    <div class="main-content-it">
+      <div class="main-content-about">
+        <About />
+      </div>
+      <div class="main-content-experience">
+        <Experience />
+      </div>
+      <div class="main-content-study"></div>
+      <div class="main-content-projects"></div>
+      <div class="main-content-contact"></div>
+    </div>
+  </main>
 </Layout>
+
+<style>
+  .main-content {
+    @apply w-full flex justify-center items-center;
+
+    .main-content-it {
+      @apply  h-full w-11/12 lg:w-5/12;
+    }
+
+    .main-content-about {
+      @apply w-full mt-6 h-fit bg-black rounded-lg
+    }
+
+    .main-content-experience {
+      @apply w-full h-96 bg-green-800 my-3 rounded-lg
+    }
+    
+    .main-content-study {
+      @apply w-full h-96 bg-red-500 my-3 rounded-3xl
+    }
+
+    .main-content-projects {
+      @apply w-full h-96 bg-blue-600 my-3 rounded-3xl
+    }
+
+    .main-content-contact {
+      @apply w-full  bg-blue-700 rounded-3xl h-96
+    }
+  }
+</style>

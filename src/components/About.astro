@@ -3,13 +3,33 @@ import { Image } from 'astro:assets'
 import avatar from "../assets/img/avatar.png"
 ---
 
-<div class="About grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center">
-    <div class="w-full h-ful flex flex-col justify-center ps-8 pt-8">
-        <h1 class="text-white font-montserrat text-3xl font-semibold">Victor Arroyave Castañeda</h1>
-        <h2 class="text-white">Front end developer JR</h2>
+<div class="About">
+    <div class="About-title">
+        <h1 class="About-title_name">Victor Arroyave Castañeda</h1>
+        <h2 class="About-title_description">Front end developer JR</h2>
     </div>
-    <div class="w-full h-full flex items-end justify-end">
-        <Image class={"w-80 h-80"} src={avatar} alt="avatar image"/>
+    <div class="About-image">
+        <Image class={"About-image_picture"} src={avatar} alt="avatar image"/>
     </div>
 </div>
 
+<style>
+    .About {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center;
+        .About-title {
+            @apply w-full h-full flex flex-col justify-center ps-8 pt-8;
+            .About-title_name {
+                @apply text-white font-montserrat text-3xl font-semibold
+            }
+            .About-title_description {
+                @apply text-white
+            }
+        }
+        .About-image {
+            @apply w-full h-full flex items-end justify-end;
+            .About-image_picture {
+                @apply w-80 h-80
+            }
+        }
+    }
+</style>

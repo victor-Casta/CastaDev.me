@@ -16,5 +16,11 @@
     "astro"
   ],
   "author": "@victorcasta",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^12.0.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4"
+  }
 }
