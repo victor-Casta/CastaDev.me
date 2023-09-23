@@ -43,11 +43,11 @@ import melborp from '../assets/img/melborp.gif'
 <style>
     .Experience {
         @apply 
-            w-full grid grid-cols-1 grid-rows-2 justify-items-center sm:justify-items-start sm:grid-cols-2 sm:grid-rows-1 md:grid-cols-12;
+            w-full grid grid-cols-1 justify-items-center sm:justify-items-start sm:grid-cols-2 sm:grid-rows-1 md:grid-cols-12;
         .Experience-social {
-            @apply w-full max-w-xs grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-4 md:col-span-4;
+            @apply w-full h-fit sm:max-w-xs grid grid-cols-4 sm:grid-cols-[repeat(auto-fill,minmax(150px,1fr))] sm:gap-4 md:col-span-4 justify-items-center;
             div {
-                @apply w-36 h-36 flex justify-center items-center rounded-xl;
+                @apply w-28 h-28 sm:w-36 sm:h-36 flex justify-center items-center rounded-xl;
             }
             .social-instagram {
                 @apply bg-fuchsia-900;
