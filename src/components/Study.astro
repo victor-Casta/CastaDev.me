@@ -1,11 +1,10 @@
 ---
-import { Image } from "astro:assets"
-import jsCoinImage from '../assets/img/js-coin.png'
+
 ---
 
 <div class="Study">
     <div class="Study-institutes">
-            <Image class:list={"image"} src={jsCoinImage} alt="JavaScript Platzi image" />
+            <div class="title-js">JS</div>
             <div class="institute_information">
                 <h3>Front-end developer with Platzi</h3>
                 <p>2023</p>
@@ -141,10 +140,10 @@ import jsCoinImage from '../assets/img/js-coin.png'
 
 <style>
     .Study {
-        @apply w-full grid grid-cols-1 grid-rows-2 md:grid-cols-12 md:grid-rows-1 gap-8;
+        @apply w-full h-80 grid grid-cols-1 grid-rows-2 md:grid-cols-12 md:grid-rows-1 gap-8;
 
         .Study-institutes {
-            @apply w-full md:max-w-2xl grid md:grid-cols-12 md:col-span-8 bg-green-700 rounded-lg;
+            @apply w-full md:max-w-2xl grid md:grid-cols-12 md:col-span-8 bg-green-500 rounded-lg;
             .image {
                 @apply col-span-4;
             }
