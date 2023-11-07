@@ -151,12 +151,12 @@
         @apply w-full h-96 pt-4 sm:h-80 sm:pt-0 grid grid-cols-1 grid-rows-2 md:grid-cols-12 md:grid-rows-1 gap-8;
 
         .Study-institutes {
-            @apply w-full md:max-w-2xl md:grid-cols-1 md:col-span-8 bg-green-500 rounded-lg relative;
+            @apply w-full h-[185px] sm:h-full md:max-w-2xl md:grid-cols-1 md:col-span-8 bg-green-500 rounded-lg relative;
             background-image: url('../assets/img/web_platzi.png');
             background-position: center;
             background-repeat: no-repeat;
             .svg-container {
-                @apply absolute right-4 top-4
+                @apply absolute right-4 top-4;
             }
         }
         .Study-institutes::after {
@@ -169,11 +169,11 @@
             @apply opacity-100
         }
         .Study-tecnologies {
-            @apply w-full md:max-w-xs md:col-span-4 bg-purple-700 rounded-lg px-6 py-6;
+            @apply w-full h-[230px] sm:h-full md:max-w-xs md:col-span-4 bg-purple-700 rounded-lg px-6 py-6;
             .icons-container {
                 @apply w-full h-full grid grid-cols-5 grid-rows-4 justify-items-center items-center;
                 .icon_item {
-                    @apply w-8 h-8
+                    @apply w-8 h-8;
                 }
             }       
         }
