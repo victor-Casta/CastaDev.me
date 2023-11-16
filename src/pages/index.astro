@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import About from "../components/About.astro";
 import Experience from "../components/Experience.astro";
 import Study from "../components/Study.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout title="castadev">
@@ -17,7 +18,9 @@ import Study from "../components/Study.astro";
       <div class="main-content-study">
         <Study />
       </div>
-      <div class="main-content-projects"></div>
+      <div class="main-content-projects">
+        <Projects />
+      </div>
       <div class="main-content-contact"></div>
     </div>
   </main>
@@ -44,7 +47,7 @@ import Study from "../components/Study.astro";
     }
 
     .main-content-projects {
-      @apply w-full h-96 bg-blue-600 my-3 rounded-3xl;
+      @apply w-full h-[415px] my-3 rounded-xl mt-[80px] sm:mt-0;
     }
 
     .main-content-contact {
