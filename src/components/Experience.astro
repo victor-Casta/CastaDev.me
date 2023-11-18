@@ -5,9 +5,18 @@ import melborp from '../assets/img/melborp.gif'
 
 <div class="Experience">
     <div class="Experience-social">
-        <div class="social-x">
+        <div class="age">
+            <p>20</p>
+            <p>Years Old</p>
+        </div>
+        <div class="social__x">
+            <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584l-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+            </svg>
+        </div>
+        <div class="social-linkedin">
             <svg width="80" height="80" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#ffffff" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584l-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                <path fill="#0ea5e9" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z"/>
             </svg>
         </div>
         <div class="social-instagram">
@@ -32,31 +41,10 @@ import melborp from '../assets/img/melborp.gif'
                 </g>
             </svg>
         </div>
-        <div class="social-linkedin">
-            <svg width="80" height="80" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#0ea5e9" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z"/>
-            </svg>
-        </div>
-        <div class="social-pinterest">
-            <svg width="80" height="80" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#1ED760" d="M128 0C57.308 0 0 57.309 0 128c0 70.696 57.309 128 128 128c70.697 0 128-57.304 128-128C256 57.314 198.697.007 127.998.007l.001-.006Zm58.699 184.614c-2.293 3.76-7.215 4.952-10.975 2.644c-30.053-18.357-67.885-22.515-112.44-12.335a7.981 7.981 0 0 1-9.552-6.007a7.968 7.968 0 0 1 6-9.553c48.76-11.14 90.583-6.344 124.323 14.276c3.76 2.308 4.952 7.215 2.644 10.975Zm15.667-34.853c-2.89 4.695-9.034 6.178-13.726 3.289c-34.406-21.148-86.853-27.273-127.548-14.92c-5.278 1.594-10.852-1.38-12.454-6.649c-1.59-5.278 1.386-10.842 6.655-12.446c46.485-14.106 104.275-7.273 143.787 17.007c4.692 2.89 6.175 9.034 3.286 13.72v-.001Zm1.345-36.293C162.457 88.964 94.394 86.71 55.007 98.666c-6.325 1.918-13.014-1.653-14.93-7.978c-1.917-6.328 1.65-13.012 7.98-14.935C93.27 62.027 168.434 64.68 215.929 92.876c5.702 3.376 7.566 10.724 4.188 16.405c-3.362 5.69-10.73 7.565-16.4 4.187h-.006Z"/>
-            </svg>
-        </div>
     </div>
     <div class="work">
         <div class="work-picture">
             <Image src={melborp} alt="melborp" />
-        </div>
-        <div class="work-information">
-            <div class="information-title">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32">
-                    <path fill="#000000" d="M25.798 10a10 10 0 0 0-19.62.124A7.496 7.496 0 0 0 7.5 25H8v-2h-.5a5.496 5.496 0 0 1-.377-10.98l.837-.057l.09-.833A7.993 7.993 0 0 1 23.736 10Z"/>
-                    <path fill="#000000" d="M28 12H18a2.002 2.002 0 0 0-2 2v4h-4a2.002 2.002 0 0 0-2 2v10h20V14a2.002 2.002 0 0 0-2-2ZM12 28v-8h4v8Zm16 0H18V14h10Z"/>
-                    <path fill="#000000" d="M20 16h2v4h-2zm4 0h2v4h-2zm-4 6h2v4h-2zm4 0h2v4h-2z"/>
-                </svg>
-                <h2>Melborp.art</h2>
-            </div>
-            <p>IT Technician and Front-end JR developer</p>
         </div>
     </div>
 </div>
@@ -70,38 +58,26 @@ import melborp from '../assets/img/melborp.gif'
             div {
                 @apply w-20 h-20 sm:w-36 sm:h-36 flex justify-center items-center rounded-lg;
                 svg {
-                    @apply w-12 h-12 sm:w-20 sm:h-20
+                    @apply w-12 h-12 sm:w-20 sm:h-20;
                 }
             }
-            .social-instagram {
-                @apply bg-purple-700;
+            .age, .experience-age {
+                @apply flex flex-col bg-purple-900 justify-center items-center;
+                p:first-child {
+                    @apply text-purple-200  text-6xl font-extrabold;
+                }
+                p {
+                    @apply text-purple-200 text-base font-medium text-center;
+                }
             }
-            .social-linkedin {
-                @apply bg-blue-100;
-            }
-            .social-pinterest {
-                @apply bg-black;
-            }
-            .social-x {
-                @apply bg-zinc-800;
+            .social-instagram,.social-linkedin, .social__x  {
+                @apply bg-primary;
             }
         }
         .work {
             @apply w-full h-full my-5 px-5 py-5 grid sm:m-0 md:col-span-8 bg-white rounded-lg;
             .work-picture {
-                @apply flex justify-center items-center;
-            }
-            .work-information {
-                @apply h-fit flex flex-col justify-end;
-                .information-title {
-                    @apply flex items-end gap-3;
-                    h2 {
-                        @apply font-montserrat text-base font-bold uppercase
-                    }
-                }
-                p {
-                    @apply font-montserrat text-sm;
-                }
+                @apply w-full flex justify-center items-center;
             }
         }
     }
