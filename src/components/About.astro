@@ -19,7 +19,7 @@ import avatar from "../assets/img/avatar.png"
         .About-title {
             @apply w-full h-full flex flex-col justify-center ps-8 pt-8;
             .About-title_name {
-                @apply font-montserrat text-2xl font-semibold uppercase;
+                @apply font-montserrat text-2xl text-green_soft font-semibold uppercase;
             }
             .About-title_description {
                 @apply text-gray-400 pt-2;
@@ -30,45 +30,6 @@ import avatar from "../assets/img/avatar.png"
             .About-image_picture {
                 @apply w-80 h-80;
             }
-        }
-        background-image: linear-gradient(
-        40deg,
-        hsl(171deg 70% 11%) 0%,
-        hsl(171deg 47% 10%) 6%,
-        hsl(171deg 30% 8%) 13%,
-        hsl(171deg 16% 5%) 20%,
-        hsl(171deg 5% 2%) 27%,
-        hsl(171deg 5% 2%) 34%,
-        hsla(0, 0%, 0%, 0.102) 42%,
-        hsl(0, 0%, 0%) 48%,
-        hsla(0, 0%, 0%, 0.862) 55%,
-        hsl(0, 0%, 0%) 60%,
-        hsl(0, 0%, 0%) 66%,
-        hsl(0, 0%, 0%) 71%,
-        hsl(0, 0%, 0%) 76%,
-        hsl(0, 0%, 0%) 81%,
-        hsl(0, 0%, 0%) 85%,
-        hsl(171deg 16% 5%) 89%,
-        hsl(171deg 30% 8%) 93%,
-        hsl(171deg 47% 10%) 97%,
-        hsl(171deg 70% 11%) 100%
-        );
-        .About-title_name{
-        --b: 0.1em;   /* the thickness of the line */
-        --c: #1ea186; /* the color */
-        
-        color: #0000;
-        padding-block: var(--b);
-        background: 
-            linear-gradient(var(--c) 50%,#d5efde 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-            linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
-        -webkit-background-clip: text,padding-box;
-                background-clip: text,padding-box;
-        transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
-        }
-        .About-title_name:hover {
-        --_p: 100%;
-        --_s: .3s;
         }
     }
 
