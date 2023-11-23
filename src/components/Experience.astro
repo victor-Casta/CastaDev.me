@@ -54,7 +54,7 @@ import melborp from '../assets/img/melborp.gif'
         @apply 
             w-full grid grid-cols-1 justify-items-center sm:justify-items-start sm:grid-cols-2 sm:grid-rows-1 md:grid-cols-12;
         .Experience-social {
-            @apply w-full h-fit sm:max-w-xs grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(150px,1fr))] sm:gap-4 md:col-span-4 justify-items-center;
+            @apply w-full h-fit sm:max-w-xs grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(150px,1fr))] sm:gap-4 md:col-span-4 justify-items-center;
             div {
                 @apply w-20 h-20 sm:w-36 sm:h-36 flex justify-center items-center rounded-lg;
                 svg {
@@ -64,10 +64,10 @@ import melborp from '../assets/img/melborp.gif'
             .age, .experience-age {
                 @apply flex flex-col bg-purple-900 justify-center items-center;
                 p:first-child {
-                    @apply text-purple-200  text-6xl font-extrabold;
+                    @apply text-purple-200 text-5xl sm:text-6xl font-extrabold;
                 }
                 p {
-                    @apply text-purple-200 text-base font-medium text-center;
+                    @apply text-purple-200 text-sm sm:text-base font-medium text-center;
                 }
             }
             .social-instagram,.social-linkedin, .social__x  {

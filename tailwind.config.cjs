@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				montserrat: ['Montserrat'],
+				anton: ['Anton'],
 			},
 			colors: {
 				'primary': '#14181b',
