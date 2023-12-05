@@ -1,5 +1,5 @@
 ---
-
+import Music from "./Music.astro";
 ---
 
 <div class="Contact">
@@ -30,27 +30,29 @@
         </div>
       </a>
     </div>
-    <a href="" class="spotify__container">
-      <div class="spotify__Content">
-        <div class="spotify__logo">
-          <svg width="24" height="24" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-            <g fill="#000000">
-                <path d="M224 128a96 96 0 1 1-96-96a96 96 0 0 1 96 96Z" opacity=".2"/>
-                <path d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Zm31.07-46.26a8 8 0 0 1-10.81 3.33a42.79 42.79 0 0 0-40.52 0a8 8 0 0 1-7.48-14.14a59.33 59.33 0 0 1 55.48 0a8 8 0 0 1 3.33 10.81Zm32-56a8 8 0 0 1-10.83 3.29a110.62 110.62 0 0 0-104.46 0a8 8 0 0 1-7.54-14.12a126.67 126.67 0 0 1 119.54 0a8 8 0 0 1 3.28 10.85Zm-16 28a8 8 0 0 1-10.82 3.3a77.07 77.07 0 0 0-72.48 0a8 8 0 0 1-7.52-14.12a93 93 0 0 1 87.52 0a8 8 0 0 1 3.29 10.84Z"/>
-            </g>
+    <div class="spotify__Content">
+      <div class="spotify__logo_one">
+        <svg width="38" height="38" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#000000">
+              <path d="M224 128a96 96 0 1 1-96-96a96 96 0 0 1 96 96Z" opacity=".2"/>
+              <path d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Zm31.07-46.26a8 8 0 0 1-10.81 3.33a42.79 42.79 0 0 0-40.52 0a8 8 0 0 1-7.48-14.14a59.33 59.33 0 0 1 55.48 0a8 8 0 0 1 3.33 10.81Zm32-56a8 8 0 0 1-10.83 3.29a110.62 110.62 0 0 0-104.46 0a8 8 0 0 1-7.54-14.12a126.67 126.67 0 0 1 119.54 0a8 8 0 0 1 3.28 10.85Zm-16 28a8 8 0 0 1-10.82 3.3a77.07 77.07 0 0 0-72.48 0a8 8 0 0 1-7.52-14.12a93 93 0 0 1 87.52 0a8 8 0 0 1 3.29 10.84Z"/>
+          </g>
         </svg>
-        </div>
-        <div class="spotify__logo">
-          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <g fill="none">
-                <circle cx="12" cy="12" r="9" fill="#000000" opacity=".16"/>
-                <circle cx="12" cy="12" r="9" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 14v-4m0 0h-4m4 0l-4 4"/>
-            </g>
+     </div>
+      <div class="spotify__logo_two">
+        <svg width="38" height="38" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none">
+              <circle cx="12" cy="12" r="9" fill="#000000" opacity=".16"/>
+              <circle cx="12" cy="12" r="9" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 14v-4m0 0h-4m4 0l-4 4"/>
+          </g>
         </svg>
-        </div>
       </div>
-    </a>
+      <div class="content">
+        <Music />
+      </div>
+      </div>
+    </div>
   </div>
   <div class="Contact__location"></div>
 </div>
@@ -76,11 +78,14 @@
           @apply w-36 h-36 flex justify-center items-center rounded-2xl;
         }
       }
-      .spotify__container {
-        @apply w-[90%] h-[50%] flex items-start gap-6 bg-green-800 rounded-2xl;
-        .spotify__Content {
-          @apply w-full h-full flex justify-between py-3 px-3;
-        }
+    }
+    .spotify__Content {
+      @apply w-[90%] h-full rounded-2xl relative mt-6 bg-primary;
+      .spotify__logo_one svg {
+        @apply absolute top-4 left-4;
+      }
+      .spotify__logo_two svg {
+        @apply absolute top-4 right-4;
       }
     }
   }
