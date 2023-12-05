@@ -39,7 +39,6 @@
     })
     .then(response => response.json())
     .then(result => {
-      console.log(result);
       imagePreview.src = result.images[0].url;
       goListen.appendChild(imagePreview);
   
