@@ -66,11 +66,11 @@ import melborp from '../assets/img/melborp.gif'
             div {
                 @apply w-20 h-20 sm:w-36 sm:h-36 flex justify-center items-center rounded-lg;
                 svg {
-                    @apply w-12 h-12 sm:w-16 sm:h-16 hover:scale-125 duration-300;
+                    @apply w-12 h-12 sm:w-16 sm:h-16 hover:scale-125 duration-300 animate-blurred-fade-in;
                 }
             }
             .age, .experience-age {
-                @apply flex flex-col bg-purple-900 justify-center items-center;
+                @apply flex flex-col bg-purple-900 justify-center items-center animate-slide-in-bottom animate-blurred-fade-in;
                 p:first-child {
                     @apply text-purple-200 text-5xl sm:text-6xl font-extrabold;
                 }
@@ -79,7 +79,7 @@ import melborp from '../assets/img/melborp.gif'
                 }
             }
             .social-instagram,.social-linkedin, .social__x  {
-                @apply bg-primary;
+                @apply bg-primary animate-slide-in-bottom;
             }
         }
         .work {
