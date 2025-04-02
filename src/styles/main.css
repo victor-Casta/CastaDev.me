@@ -47,7 +47,7 @@ main.layout-container .layout-left .left-section__top .top-content__secondary .s
   @apply overflow-hidden;
 }
 main.layout-container .layout-left .left-section__top .top-content__secondary .profile-box {
-  @apply bg-orange-300 row-span-8;
+  @apply rounded-xl border border-dark_16 bg-dark_10 p-5 row-span-8;
 }
 main.layout-container .layout-left .left-section__bottom {
   @apply row-span-4 grid gap-2 grid-cols-1 tablet:grid-cols-12;

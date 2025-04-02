@@ -29,6 +29,6 @@ module.exports = {
 		}
 	},
 	plugins: [
-		require('tailwindcss-debug-screens')
+		require('tailwindcss-debug-screens'),
 	],
 }

@@ -2,7 +2,6 @@
   "dependencies": {
     "@astrojs/netlify": "^3.0.1",
     "@astrojs/tailwind": "^5.1.4",
-    "@midudev/tailwind-animations": "^0.0.7",
     "dotenv": "^16.3.1",
     "gsap": "^3.12.7"
   },

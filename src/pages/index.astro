@@ -10,6 +10,7 @@ import meteorIcon from "../assets/icons/meteor.svg"
 import happyIcon from "../assets/icons/happy.svg"
 import resumeIcon from "../assets/icons/resume.svg"
 import "../styles/main.css";
+import Profile from "../components/Profile.astro";
 ---
 
 <Layout title="castadev">
@@ -44,7 +45,9 @@ import "../styles/main.css";
               </div>
             </div>
           </div>
-          <div class="profile-box"></div>
+          <div class="profile-box">
+            <Profile />
+          </div>
         </div>
       </div>
       <div class="left-section__bottom">

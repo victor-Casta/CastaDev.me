@@ -1,0 +1,57 @@
+.Profile .section-principal {
+  @apply flex gap-5 justify-start;
+}
+
+.Profile .section-principal .profile-photo img {
+  @apply w-24 bg-purple_78 rounded-xl;
+}
+
+.Profile .section-principal .name .message__profile {
+  @apply flex justify-center items-center gap-3 bg-dark_10 border border-dark_16 rounded-2xl px-5 py-2;
+}
+
+.Profile .section-principal .name .message__profile .state {
+  @apply w-3 h-3 bg-green-600 rounded-full shadow-sm shadow-green-600;
+  animation: fade-in 3s ease-in-out infinite;
+}
+
+.Profile .section-principal .name .message__profile p {
+  @apply text-gray_46 text-sm font-light;
+}
+
+.Profile .section-principal .name {
+  @apply flex gap-2 flex-col justify-center items-start;
+}
+
+.Profile .section-principal .name h2 {
+  @apply text-gray_85 font-manrope text-xl font-semibold;
+}
+
+.Profile .section-principal .name .profession {
+  @apply text-gray_40 text-sm font-light;
+}
+
+.Profile .section-principal .name .profession span {
+  @apply text-purple_78 font-normal;
+}
+
+.Profile .section-principal .resume-cv {
+  @apply flex justify-between items-center h-fit gap-3;
+}
+
+.Profile .section-principal .resume-cv p {
+  @apply text-gray_80 text-base font-light;
+}
+
+.Profile .section-principal .resume-cv .icon__resume-cv {
+  @apply flex justify-center items-center w-fit h-fit p-5 bg-dark_16 rounded-2xl cursor-pointer;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
