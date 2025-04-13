@@ -1,13 +1,16 @@
 .Profile .section-principal {
-  @apply flex gap-5 justify-start;
+  @apply grid gap-5 grid-cols-3 tablet:grid-cols-8;
+}
+.Profile .section-principal .profile-photo {
+  @apply col-span-1 tablet:col-span-2;
 }
 
 .Profile .section-principal .profile-photo img {
-  @apply w-24 bg-purple_78 rounded-xl;
+  @apply w-full bg-purple_78 rounded-xl;
 }
 
 .Profile .section-principal .name .message__profile {
-  @apply flex justify-center items-center gap-3 bg-dark_10 border border-dark_16 rounded-2xl px-5 py-2;
+  @apply col-span-1 flex justify-center items-center gap-3 bg-dark_10 border border-dark_16 rounded-2xl px-5 py-2;
 }
 
 .Profile .section-principal .name .message__profile .state {
@@ -20,7 +23,7 @@
 }
 
 .Profile .section-principal .name {
-  @apply flex gap-2 flex-col justify-center items-start;
+  @apply col-span-2 tablet:col-span-3 flex gap-2 flex-col justify-center items-start;
 }
 
 .Profile .section-principal .name h2 {
@@ -36,7 +39,7 @@
 }
 
 .Profile .section-principal .resume-cv {
-  @apply flex justify-between items-center h-fit gap-3;
+  @apply hidden tablet:col-span-3 tablet:flex justify-end items-center h-fit gap-1;
 }
 
 .Profile .section-principal .resume-cv p {
@@ -44,7 +47,27 @@
 }
 
 .Profile .section-principal .resume-cv .icon__resume-cv {
-  @apply flex justify-center items-center w-fit h-fit p-5 bg-dark_16 rounded-2xl cursor-pointer;
+  @apply w-12 h-12 flex gap-0 justify-center items-center bg-dark_16 rounded-lg cursor-pointer;
+}
+
+.Profile .section-principal .resume-cv .icon__resume-cv img {
+  @apply w-6 h-6;
+}
+
+.Profile .section-information {
+  @apply p-5 mt-5 bg-dark_10 border border-dark_16 rounded-2xl flex gap-3 flex-wrap;
+}
+
+.Profile .section-chat {
+  @apply mt-5 flex justify-between;
+}
+
+.Profile .section-chat .social-chat {
+  @apply h-12  w-[48%] flex gap-3 justify-center items-center bg-dark_10 rounded-2xl border border-dark_16;
+}
+
+.Profile .section-chat .social-chat p {
+  @apply text-gray_80 text-base font-light;
 }
 
 @keyframes fade-in {

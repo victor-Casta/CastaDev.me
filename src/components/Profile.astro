@@ -4,6 +4,11 @@ import resumeIcon from "../assets/icons/resume.svg";
 import ItemInformation from "./Item-information.astro";
 import locationIcon from "../assets/icons/location.svg";
 import profilePhoto from "../assets/images/profile.png";
+import worldIcon from "../assets/icons/world.svg";
+import hatIcon from "../assets/icons/hat.svg";
+import drivenIcon from "../assets/icons/rocket.svg";
+import telegramIcon from "../assets/icons/telegram.svg";
+import whatsappIcon from "../assets/icons/whatsapp.svg";
 import "../styles/Profile.css";
 ---
 
@@ -18,7 +23,9 @@ import "../styles/Profile.css";
         <p>Available to work</p>
       </div>
       <h2>Victor Arroyave</h2>
-      <p class="profession">I'm a <span id="animated-text"></span><span id="cursor">_</span></p>
+      <p class="profession">
+        I'm a <span id="animated-text"></span><span id="cursor">_</span>
+      </p>
     </div>
     <div class="resume-cv">
       <p>resume</p>
@@ -30,10 +37,43 @@ import "../styles/Profile.css";
   <div class="section-information">
     <ItemInformation
       iconInformation={locationIcon}
-      titleInformation="Hola Mundo"
+      titleInformation="Colombia"
+    />
+    <ItemInformation
+      iconInformation={worldIcon}
+      titleInformation="Spanish & English"
+    />
+    <ItemInformation
+      iconInformation={hatIcon}
+      titleInformation="Software Engineer"
+    />
+    <ItemInformation
+      iconInformation={drivenIcon}
+      titleInformation="Driven person"
     />
   </div>
-  <div class="section-chat"></div>
+  <div class="section-chat">
+    <a
+      href="https://t.me/+573193958699"
+      class="social-chat telegram-container"
+      target="_blank"
+    >
+      <div class="telegram-icon">
+        <Image src={telegramIcon} alt={"telegram icon"} />
+      </div>
+      <p>Telegram</p>
+    </a>
+    <a
+      href="https://wa.me/573016456893"
+      class="social-chat whatsapp-container"
+      target="_blank"
+    >
+      <div class="whatsapp-icon">
+        <Image src={whatsappIcon} alt={"whatsapp icon"} />
+      </div>
+      <p>Whatsapp</p>
+    </a>
+  </div>
 </div>
 
 <script>

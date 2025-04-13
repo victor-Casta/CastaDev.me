@@ -1,5 +1,5 @@
 main.layout-container {
-  @apply w-full h-screen max-w-[390px] grid gap-2 grid-cols-1 tablet:max-w-[810px] laptop:max-w-[1540px] laptop:max-h-[696px] laptop:grid-rows-1 laptop:grid-cols-12 desktop:max-w-[1800px] desktop:max-h-[896px];
+  @apply w-full h-screen max-w-[390px] grid gap-2 grid-cols-1 tablet:max-w-[810px] laptop:max-w-[1540px] laptop:max-h-[855px] laptop:grid-rows-1 laptop:grid-cols-12 desktop:max-w-[1800px] desktop:max-h-[900px];
 }
 
 main.layout-container .layout-left {
@@ -23,7 +23,7 @@ main.layout-container .layout-left .left-section__top .top-content__primary .wor
   @apply row-span-6;
 }
 main.layout-container .layout-left .left-section__top .top-content__secondary {
-  @apply grid gap-2 grid-rows-12 tablet:col-span-7;
+  @apply grid gap-2 grid-rows-9 tablet:grid-rows-12 tablet:col-span-7;
 }
 main.layout-container .layout-left .left-section__top .top-content__secondary .stats-grid {
   @apply grid gap-2 grid-cols-2 grid-rows-2 tablet:grid-cols-3 tablet:grid-rows-1 row-span-4;

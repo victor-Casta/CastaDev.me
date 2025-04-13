@@ -1,0 +1,7 @@
+.Item-information {
+  @apply w-fit py-1 px-2 flex flex-row items-center justify-start gap-1 bg-dark_10 border border-dark_16 rounded-full;
+}
+
+.Item-information p {
+  @apply text-gray_80 text-sm;
+}
