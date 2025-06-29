@@ -11,6 +11,7 @@ import happyIcon from "../assets/icons/happy.svg"
 import resumeIcon from "../assets/icons/resume.svg"
 import "../styles/main.css";
 import Profile from "../components/Profile.astro";
+import Clients from "../components/Clients.astro";
 ---
 
 <Layout title="castadev">
@@ -57,7 +58,9 @@ import Profile from "../components/Profile.astro";
           </div>
         </div>
         <div class="bottom-content__secondary">
-          <div class="clients-box"></div>
+          <div class="clients-box">
+            <Clients />
+          </div>
         </div>
       </div>
     </section>

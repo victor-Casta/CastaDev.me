@@ -61,7 +61,7 @@ main.layout-container .layout-left .left-section__bottom .bottom-content__primar
   @apply h-full overflow-hidden;
 }
 main.layout-container .layout-left .left-section__bottom .bottom-content__secondary {
-  @apply bg-blue-400 tablet:col-span-7;
+  @apply rounded-xl border border-dark_16 bg-dark_10 p-5 tablet:col-span-7;
 }
 
 main.layout-container .layout-right .right-section__top {

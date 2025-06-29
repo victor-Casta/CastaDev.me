@@ -1,0 +1,19 @@
+section.Clients .title-section {
+    @apply flex flex-col justify-center items-center gap-1 mb-6;
+}
+
+section.Clients .title-section .title {
+    @apply flex gap-2 items-center justify-center;
+}
+
+section.Clients .title-section img {
+    @apply w-5 desktop:w-6;
+}
+
+section.Clients .title-section .title span {
+    @apply flex gap-2 text-sm font-normal text-gray_46 desktop:text-lg;
+}
+
+section.Clients .title-section h2 {
+    @apply text-base font-semibold text-gray_90 desktop:text-xl capitalize;
+}
