@@ -19,7 +19,7 @@
 }
 
 .Profile .section-principal .name .message__profile p {
-  @apply text-gray_46 text-sm font-light;
+  @apply text-gray_46 text-[10px] font-light;
 }
 
 .Profile .section-principal .name {
