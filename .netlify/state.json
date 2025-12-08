@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Medellín",
+			"country": {
+				"code": "CO",
+				"name": "Colombia"
+			},
+			"subdivision": {
+				"code": "ANT",
+				"name": "Antioquia"
+			},
+			"timezone": "America/Bogota",
+			"latitude": 6.2529,
+			"longitude": -75.5646,
+			"postalCode": "050001"
+		},
+		"timestamp": 1765217467307
+	}
+}
