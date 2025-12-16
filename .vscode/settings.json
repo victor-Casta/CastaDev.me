@@ -1,4 +1,9 @@
 {
   "editor.inlineSuggest.showToolbar": "onHover",
+<<<<<<< HEAD
   "CodeGPT.apiKey": "LM Studio"
+=======
+  "IDX.aI.enableInlineCompletion": true,
+  "IDX.aI.enableCodebaseIndexing": true
+>>>>>>> origin/main
 }
