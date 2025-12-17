@@ -1,19 +1,42 @@
-section.Clients .title-section {
-    @apply flex flex-col justify-center items-center gap-1 mb-6;
+section.Clients {
+    @apply w-full h-full bg-dark_06 border border-dark_16 rounded-2xl py-3 flex flex-col justify-center items-center overflow-x-hidden relative;
+}
+section.Clients .Clients-title-section {
+    @apply flex flex-col justify-center items-center gap-1 mb-6 m-1;
 }
 
-section.Clients .title-section .title {
+section.Clients .Clients-title-section .title {
     @apply flex gap-2 items-center justify-center;
 }
 
-section.Clients .title-section img {
+section.Clients .Clients-title-section img {
     @apply w-5 desktop:w-6;
 }
 
-section.Clients .title-section .title span {
+section.Clients .Clients-title-section .title span {
     @apply flex gap-2 text-sm font-normal text-gray_46 desktop:text-lg;
 }
 
-section.Clients .title-section h2 {
+section.Clients .Clients-title-section h2 {
     @apply text-base font-semibold text-gray_90 desktop:text-xl capitalize;
+}
+
+section.Clients .Clients-animation__container {
+    @apply w-full flex flex-col gap-2 relative overflow-hidden;
+}
+
+section.Clients .Clients-animation__container .to-right__container {
+    @apply flex gap-2 flex-row-reverse;
+}
+
+section.Clients .Clients-animation__container .to-left__container {
+    @apply flex gap-2;
+}
+
+section.Clients .Clients-animation__container::after {
+    @apply absolute w-24 h-full left-0 content-[''] bg-gradient-to-r from-dark_06 from-20% via-dark_06 via-10%;
+}
+
+section.Clients .Clients-animation__container::before {
+    @apply absolute z-50 w-24 h-full right-0 content-[''] bg-gradient-to-l from-dark_06 from-20% via-dark_06 via-10%;
 }

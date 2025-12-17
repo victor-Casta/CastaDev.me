@@ -1,15 +1,111 @@
 ---
-  import Image from 'astro/components/Image.astro'
-  import secondaryRocket from '../assets/icons/rocket-secondary.svg'
-  import '../styles/Clients.css'
+import Image from "astro/components/Image.astro";
+import secondaryRocket from "../assets/icons/rocket-secondary.svg";
+import "../styles/Clients.css";
+import melborpLogo from "../assets/icons/melborp.svg"
+import vinestreetLogo from "../assets/icons/vinestreet.svg"
+import ikironkaLogo from "../assets/icons/ikironka.svg"
+import ambaRoseLogo from "../assets/icons/ambar-rose.svg"
+import SingleLogo from "./Single-logos.astro";
 ---
 
 <section class="Clients">
-    <div class="title-section">
-        <div class="title">
-          <Image src={secondaryRocket} alt="bag icon" />
-          <span>My Clients</span>
-        </div>
-        <h2>Satisfied Partners</h2>
-      </div>
+  <div class="Clients-title-section">
+    <div class="title">
+      <Image src={secondaryRocket} alt="bag icon" />
+      <span>My Clients</span>
+    </div>
+    <h2>Satisfied Partners</h2>
+  </div>
+  <div class="Clients-animation__container">
+    <div class="to-right__container">
+      <SingleLogo
+        iconUrl={melborpLogo}
+        partnerName="Melborp agency"
+        customClass="service-item__right"
+      />
+      <SingleLogo
+        iconUrl={vinestreetLogo}
+        partnerName="Vinestreet"
+        customClass="service-item__right"
+      />
+      <SingleLogo
+        iconUrl={ikironkaLogo}
+        partnerName="Ikironka"
+        customClass="service-item__right"
+      />
+      <SingleLogo
+        iconUrl={ambaRoseLogo}
+        partnerName="Ambar Rose"
+        customClass="service-item__right"
+      />
+      <SingleLogo
+        iconUrl={melborpLogo}
+        partnerName="Melborp agency"
+        customClass="service-item__right"
+      />
+      <SingleLogo
+        iconUrl={ambaRoseLogo}
+        partnerName="Ambar Rose"
+        customClass="service-item__right"
+      />
+      <SingleLogo
+        iconUrl={ikironkaLogo}
+        partnerName="Ikironka Logo"
+        customClass="service-item__right"
+      />
+      <SingleLogo
+        iconUrl={vinestreetLogo}
+        partnerName="Vinestreet"
+        customClass="service-item__right"
+      />
+      <SingleLogo
+        iconUrl={melborpLogo}
+        partnerName="Melborp agency"
+        customClass="service-item__right"
+      />
+    </div>
+    <div class="to-left__container">
+      <SingleLogo
+        iconUrl={melborpLogo}
+        partnerName="Melborp agency"
+        customClass="service-item__left"
+      />
+      <SingleLogo
+        iconUrl={vinestreetLogo}
+        partnerName="Vinestreet"
+        customClass="service-item__left"
+      />
+      <SingleLogo
+        iconUrl={ikironkaLogo}
+        partnerName="Ikironka Logo"
+        customClass="service-item__left"
+      />
+      <SingleLogo
+        iconUrl={ambaRoseLogo}
+        partnerName="Ambar Rose"
+        customClass="service-item__left"
+      />
+      <SingleLogo
+        iconUrl={ambaRoseLogo}
+        partnerName="Ambar Rose"
+        customClass="service-item__left"
+      />
+      <SingleLogo
+        iconUrl={ikironkaLogo}
+        partnerName="Ikironka Logo"
+        customClass="service-item__left"
+      />
+      <SingleLogo
+        iconUrl={vinestreetLogo}
+        partnerName="Vinestreet"
+        customClass="service-item__left"
+      />
+      <SingleLogo
+        iconUrl={melborpLogo}
+        partnerName="Melborp agency"
+        customClass="service-item__left"
+      />
+    </div>
+  </div>
 </section>

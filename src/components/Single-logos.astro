@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets'
+import '../styles/Single-logo.css'
+
+interface Props {
+  iconUrl: ImageMetadata,
+  partnerName: string,
+  customClass?: string
+}
+
+const { iconUrl, partnerName, customClass = '' } = Astro.props
+---
+
+<div class={`Single-logos ${customClass}`}>
+  <div class="icon">
+    <Image src={iconUrl} alt={partnerName} />
+  </div>
+</div>

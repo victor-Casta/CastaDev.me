@@ -1,0 +1,15 @@
+div.Single-logos {
+  @apply min-w-fit flex gap-2 items-center bg-dark_10 p-2 rounded-xl border border-dark_16;
+}
+
+div.Single-logos .icon {
+  @apply w-[150px] h-9 flex justify-center items-center rounded-lg;
+}
+
+div.Single-logos .icon img {
+  @apply w-[120px] h-6;
+}
+
+div.Single-logos p {
+  @apply text-sm desktop:text-base text-gray_80 font-light;
+}
