@@ -12,6 +12,7 @@ import resumeIcon from "../assets/icons/resume.svg"
 import "../styles/main.css";
 import Profile from "../components/Profile.astro";
 import Clients from "../components/Clients.astro";
+import Testimonials from "../components/Testimonials.astro";
 ---
 
 <Layout title="castadev">
@@ -67,7 +68,9 @@ import Clients from "../components/Clients.astro";
     <section class="layout-right">
       <div class="right-section__top">
         <div class="top-right__primary">
-          <div class="testimonials-box"></div>
+          <div class="testimonials-box">
+            <Testimonials />
+          </div>
         </div>
         <div class="top-right__secondary">
           <div class="work-process-box"></div>

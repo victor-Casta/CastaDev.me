@@ -1,0 +1,19 @@
+---
+import "../styles/Testimonials.css";
+import Image from "astro/components/Image.astro";
+import testimonialIcon from "../assets/icons/smile.svg";
+---
+
+<section class="Testimonials">
+  <div class="Testimonial-title__section">
+    <div class="princial-title__section">
+      <Image
+        src={testimonialIcon}
+        alt="testimonial icon"
+        class="testimonial-icon"
+      />
+      <h2 class="testimonial-title">Testimonials</h2>
+    </div>
+    <p class="testimonial-subtitle">Reviews Showcase</p>
+  </div>
+</section>
